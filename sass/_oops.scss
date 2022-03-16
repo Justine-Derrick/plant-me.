@@ -1,0 +1,86 @@
+.oops-mobile{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+
+    .oops-content{
+        width: 100vw;
+        height: 100vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .oops-logo{
+        margin-bottom: 2rem;
+    }
+
+    .oops-heading{
+        font-family: 'Sora', sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        padding-top: 1rem;
+    }
+
+    .oops-message{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem;
+        color: #121A0E;
+    
+    }
+
+    @media #{$tablet}{
+        display: none;
+    }
+
+    @media #{$mobile}{
+        display: block;
+    }
+}
+
+.oops-tablet{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+
+    .oops-content{
+        width: 100vw;
+        height: 100vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .oops-logo{
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .oops-heading{
+        font-family: 'Sora', sans-serif;
+        font-size: 4rem;
+        font-weight: 900;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .oops-message{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem;
+        color: #121A0E;
+    
+    }
+
+    @media #{$tablet}{
+        display: block;
+    }
+
+    @media #{$mobile}{
+        display: none;
+    }
+}

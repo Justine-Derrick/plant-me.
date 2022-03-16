@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <title>plant me.</title>
+    <link rel="icon" href="./img/logo.svg">
+    
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img class="nav__logo-icon" src="./img/logo.svg" alt="plant icon">
+                <img class="nav__logo-name" src="./img/plant me..png" alt="text reading 'plant me'">
+            </div>
+            <div class="nav__pages">
+                <ul class="page-list">
+                    <li class="page-list__item">HOME</li>
+                    <li class="page-list__item current">STORE</li>
+                    <img class="more" src="./img/more-arrow.png">
+                    <li class="page-list__item">PLANT STYLING</li>
+                    <li class="page-list__item">PLANT CARE</li>
+                    <li class="page-list__item">ABOUT</li>
+                    <li class="page-list__item">CONTACT</li>
+                </ul>
+                <div class="nav-icon">
+                    <img class="nav-icon__favourites" src="./img/favourites.png" alt="heart icon">
+                    <img class="nav-icon__cart" src="./img/tag.png" alt="cart icon">
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-title">
+            <h1 class="page-heading">OUR STORE</h1>
+            <h3 class="page-subheading">go on, treat yourself. you know you want to.</h3>
+        </div>
+    </header>
+
+    <section class="store">
+        <div class="store-headings">
+            <div class="search-container">
+                <input type="text" class="search-bar" name="search" value="" id="searchWord" placeholder="SHOP OUR COLLECTION.">
+                <div id="searchFilter"><i class="fas fa-search search-icon"></i></div>
+            </div>
+            <select name="" id="sortBtn" class="drop-down">
+                <option value="">SORT BY</option>
+                <option value="name">Plant Name A-Z</option>
+                <option value="price">Price Low to High</option>
+                <option value="size">Plant Size Small to Large</option>
+            </select>
+        </div>
+
+        <div class="filters-container">
+
+            <div class="plant-filters">
+
+                
+                <div class="price-form-background">
+                    <div class="price-form">
+
+                        <form class="plant-price">
+        
+                            <h3 class="plant-filter-heading">PLANT PRICE</h3>
+                            
+                            <input type="radio" name="price" value="all">
+                            <label for="price">All prices</label>
+                            <br>
+                            <input type="radio" name="price" value="low-price">
+                            <label for="price">$20 - $39</label>
+                            <br>
+                            <input type="radio" name="price" value="medium-price">
+                            <label for="price">$40 - $74</label>
+                            <br>
+                            <input type="radio" name="price" value="high-price">
+                            <label for="price">$75 - $99</label>
+                            <br>
+                            <input type="radio" name="price" value="xl-price">
+                            <label for="price">$100+</label>
+                            
+                        </form>
+
+                        <button class="price-btn" id="submitPrice" type="submit">FILTER BY PRICE!</button>
+        
+                    </div>
+                </div>
+
+                <div class="plant-form-container">
+
+                        <div class="plant-form-background">
+                            <div class="plant-form">
+                        
+                                <form class="plant-size">
+                    
+                                    <h3 class="plant-filter-heading">PLANT SIZE</h3>
+                                    
+                                    <input type="checkbox" name="size" value="small">
+                                    <label for="size">Small Plants</label>
+                                    <br>
+                                    <input type="checkbox" name="size" value="medium">
+                                    <label for="size">Medium Plants</label>
+                                    <br>
+                                    <input type="checkbox" name="size" value="large">
+                                    <label for="size">Large Plants</label>
+                                    
+                                </form>
+                            
+
+                                <form class="plant-water">
+
+                                    <h3 class="plant-filter-heading">WATER NEEDS</h3>
+                                    
+                                    <input type="checkbox" name="water" value="low">
+                                    <label for="water">Low Water Needs</label>
+                                    <br>
+                                    <input type="checkbox" name="water" value="moderate">
+                                    <label for="water">Medium Water Needs</label>
+                                    <br>
+                                    <input type="checkbox" name="water" value="high">
+                                    <label for="water">High Water Needs</label>
+                    
+                                </form>
+
+                                <form class="plant-light">
+
+                                    <h3 class="plant-filter-heading">LIGHT NEEDS</h3>
+                                    
+                                    <input type="checkbox" name="light" value="low-light">
+                                    <label for="light">Low Light Needs</label>
+                                    <br>
+                                    <input type="checkbox" name="light" value="medium-light">
+                                    <label for="light">Medium Light Needs</label>
+                                    <br>
+                                    <input type="checkbox" name="light" value="high-light">
+                                    <label for="light">High Light Needs</label>
+                    
+                                </form>
+
+                            </div>
+                
+
+                            <div class="filter-submit">
+                                <button class="submit-btn" id="submitBtn" type="submit">FILTER MY PLANTS!</button>
+                                <button class="refresh-btn" id="refreshBtn" type="submit">REFRESH MY FILTERS</button>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="pop-out"><i class="fas fa-angle-right"></i></div>
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="store__items">
+            <div id="storeContainer" class="store__card-container"></div>
+        </div>
+
+        <div class="see-more">
+            <button class="see-more-btn">SHOW ME MORE PLANTS</button>
+        </div>
+
+
+        <!-- MODAL -->
+
+   
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    
+                    <div class="row modal-body clearfix" id="modalBody"></div>
+                
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+</section>
+
+<section class="oops-mobile">
+    <div class="oops-content">
+        <div class="oops-logo">
+            <img class="logo" src="./img/logo-footer.png" alt="logo">
+        </div>
+
+        <h2 class="oops-heading">OOPS!</h2>
+
+        <h3 class="oops-message">
+            
+            <br>
+            <br>
+            looks like we're still working on a mobile site.
+            <br>
+            <br>
+            check out our desktop site for all your plant needs!
+        </h3>
+    </div>
+</section>
+
+<section class="oops-tablet">
+    <div class="oops-content">
+        <div class="oops-logo">
+            <img class="logo" src="./img/logo-footer.png" alt="logo">
+        </div>
+
+        <h2 class="oops-heading">OOPS!</h2>
+        <h3 class="oops-message">
+            
+            <br>
+            <br>
+            looks like we're still working on a tablet site.
+            <br>
+            <br>
+            check out our desktop site for all your plant needs!
+        </h3>
+    </div>
+
+</section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer__left">
+            <img class="footer-logo" src="./img/logo-footer.png" alt="logo">
+            <ul class="footer-nav">
+                <li class="footer-nav__item">HOME</li>
+                <li class="footer-nav__item current">SHOP</li>
+                <li class="footer-nav__item">PLANT STYLING</li>
+                <li class="footer-nav__item">PLANT CARE</li>
+            </ul>
+        </div>
+        <div class="footer__right">
+            <div class="footer__right-upper">
+                <div class="company">
+                    <h4 class="company-heading">COMPANY</h4>
+                    <ul class="company-nav">
+                        <li class="company-nav__item">ABOUT US</li>
+                        <li class="company-nav__item">CONTACT</li>
+                    </ul>
+                </div>
+                <div class="more-info">
+                    <h4 class="more-info-heading">MORE INFO</h4>
+                    <ul class="more-info-nav">
+                        <li class="more-info-nav__item">DELIVERY INFORMATION</li>
+                        <li class="more-info-nav__item">PRIVACY POLICY</li>
+                        <li class="more-info-nav__item">TERMS OF SERVICE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right-lower">
+                <img class="social-icon" src="./img/facebook.png" alt="facebook icon">
+                <img class="social-icon" src="./img/instagram.png" alt="instagram icon">
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="./script.js"></script>    
+</body>
+</html>

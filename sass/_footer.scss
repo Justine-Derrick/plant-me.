@@ -1,0 +1,97 @@
+.footer{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #EFF1F0;
+
+    &-nav{
+        list-style: none;
+        padding-top: 1rem;
+        padding-left: 5rem;
+        font-family: 'Sora', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+
+        .current{
+            font-weight: 700;
+            color: #7CAF37;
+        }
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+
+        &-upper{
+            display: flex;
+            justify-content: flex-start;
+            list-style: none;
+
+            .company{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+
+                &-heading{
+                    width: 100%;
+                    border-bottom: solid #7CAF37 3px;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    line-height: 2.5rem;
+                }
+            }
+
+            .company-nav{
+                list-style: none;
+                font-family: 'Sora', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+
+            .more-info{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 3rem;
+
+                &-nav{
+                    list-style: none;
+                    font-family: 'Sora', sans-serif;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+
+                &-heading{
+                    width: 100%;
+                    border-bottom: solid #7CAF37 3px;
+                    font-size: 1.4rem;
+                    line-height: 2.5rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &-lower{
+            display: flex;
+            justify-content: flex-end;
+
+
+            .social-icon{
+                height: 3.5rem;
+                width: 3.5rem;
+                padding-top: 1rem;
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    @media #{$tablet}{
+        display: none;
+    }
+
+    @media #{$mobile}{
+        display: none;
+    }
+}
